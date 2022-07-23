@@ -10,16 +10,8 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 
-#----------------------Hide Streamlit footer----------------------------
-hide_st_style = “”"
-
 #MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
-
-“”"
-st.markdown(hide_st_style, unsafe_allow_html=True)
-#--------------------------------------------------------------------
+            footer {visibility: hidden;}
 
 
 def get_face_box(net, frame, conf_threshold=0.7):
